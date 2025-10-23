@@ -48,7 +48,17 @@ export default function Products() {
         image={h.image}
         overlay="bg-slate-900/50"
       />
-      
+      <Container className="py-10">
+        <p className="mx-auto max-w-4xl text-justify text-center text-slate-700">
+          DUTA CCTV memiliki pengalaman dalam instalasi dan maintenance meliputi
+          CCTV , Access Control , Mesin Absensi (time & attendance) , Alarm
+          System , Smart Home , Retail Machine , Telepon PABX dan masih banyak
+          lagi. Kami juga memiliki teknisi yang sangat handal di bidang kamera
+          pengawas yang siap membantu memberikan solusi disaat Anda mengalami
+          kendala dengan kamera. Jika Anda baru pertama kali membeli CCTV tanpa
+          instalasi, kami menjadi solusi untuk Anda.
+        </p>
+      </Container>
 
       {/* FILTER TABS */}
       <Container className="pt-8">

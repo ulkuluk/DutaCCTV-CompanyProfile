@@ -54,7 +54,7 @@ const site = {
   footer: {
     copyright: `© ${new Date().getFullYear()} Duta CCTV. All rights reserved.`,
     socials: [
-      { label: "LinkedIn", href: "https://www.linkedin.com/" },
+      { label: "Shopee", href: "https://www.shopee.com/" },
       { label: "Instagram", href: "https://www.instagram.com/" },
       { label: "X/Twitter", href: "https://twitter.com/" },
     ],

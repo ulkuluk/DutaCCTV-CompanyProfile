@@ -1,6 +1,7 @@
 import site from "../content/site";
 import Section from "../components/Section";
 import ProductCard from "../components/ProductCard";
+import WordLink from "../components/WordLink";
 
 export default function ProductSection() {
   return (
@@ -21,6 +22,9 @@ export default function ProductSection() {
                 desc={p.desc}
               />
             ))}
+          </div>
+          <div className="mt-10 text-center">
+            <WordLink href={"/packages"}>{"Lihat Selengkapnya"}</WordLink>
           </div>
 
           {/* (Opsional) grid layanan lama di bawahnya

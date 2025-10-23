@@ -75,7 +75,7 @@ export default function Recruitment() {
               href={`mailto:${site.recruitment?.email || "hr@bosscctv.id"}`}
               className="text-blue-700 underline"
             >
-              {site.recruitment?.email || "hr@bosscctv.id"}
+              {site.recruitment?.email || "hr@dutacctv.id"}
             </a>{" "}
             atau hubungi HR kami via WhatsApp{" "}
             <a

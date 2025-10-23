@@ -14,7 +14,7 @@ export default function ServicesSection() {
             Layanan 
           </h2>
           <p className="mt-4 mb-10 text-base md:text-lg leading-relaxed text-blue-50 mt-3 max-w-2xl text-white text-justify">
-            BOSS CCTV adalah penyedia terkemuka dalam solusi keamanan
+            DUTA CCTV adalah penyedia terkemuka dalam solusi keamanan
             terintegrasi, khususnya dalam sistem keamanan dan CCTV. Dengan
             pengalaman puluhan tahun di industri ini, kami telah membuktikan
             diri sebagai mitra yang dapat diandalkan untuk memenuhi kebutuhan

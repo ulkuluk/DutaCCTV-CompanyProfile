@@ -11,7 +11,7 @@ import { useState } from "react";
 export default function FAQSection({
   items = [],
   title = "Pertanyaan Umum (FAQ)",
-  subtitle = "Temukan jawaban untuk pertanyaan yang sering diajukan.",
+  subtitle = "Kami berkomitmen untuk memberikan layanan terbaik kepada pelanggan kami, baik itu sebelum maupun setelah penjualan. Jika Anda memiliki pertanyaan lebih lanjut tentang layanan after sales atau garansi pemasangan kami, jangan ragu untuk menghubungi kami.",
   defaultOpenFirst = true,
 }) {
   return (
