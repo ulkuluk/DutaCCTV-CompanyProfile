@@ -36,7 +36,7 @@ export default function TestimonialCarousel({ images = [], interval = 4000 }) {
             <img
               src={img.src}
               alt={img.alt || `Testimoni ${i + 1}`}
-              className="h-64 w-full object-cover md:h-80"
+              className="h-80 w-full md:h-96"
               loading="lazy"
               decoding="async"
             />

@@ -27,18 +27,7 @@ export default function Footer() {
           </div>
         </div>
         <nav className="flex flex-wrap items-center gap-x-4 gap-y-2">
-          <a
-            href="/terms"
-            className="text-sm font-medium text-white hover:text-slate-900"
-          >
-            Terms & Conditions
-          </a>
-          <a
-            href="/privacy"
-            className="text-sm font-medium text-white hover:text-slate-900"
-          >
-            Privacy Policy
-          </a>
+          
           {site.footer.socials.map((s) => (
             <a
               key={s.label}

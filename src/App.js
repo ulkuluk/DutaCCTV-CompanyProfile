@@ -11,6 +11,7 @@ import Packages from "./pages/Packages";
 import CustomerService from "./pages/CustomerService";
 import FAQ from "./pages/Faq";
 import Recruitment from "./pages/Recruitment";
+import Review from "./pages/Review";
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/customer-service" element={<CustomerService />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/recruitment" element={<Recruitment />} />
+        <Route path="/review" element={<Review />} />
       </Routes>
     </BrowserRouter>
   );

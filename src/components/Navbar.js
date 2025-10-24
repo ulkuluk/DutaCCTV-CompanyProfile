@@ -154,6 +154,12 @@ export default function Navbar() {
                       style={{ "--tw-ring-color": PRIMARY_DARK }}
                     >
                       Recruitment
+                    </a><a
+                      href="/review"
+                      className="block rounded-lg px-3 py-2 text-sm text-slate-800 hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+                      style={{ "--tw-ring-color": PRIMARY_DARK }}
+                    >
+                      Review Our Website
                     </a>
                   </div>
                 </div>

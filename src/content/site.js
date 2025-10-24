@@ -54,9 +54,8 @@ const site = {
   footer: {
     copyright: `© ${new Date().getFullYear()} Duta CCTV. All rights reserved.`,
     socials: [
-      { label: "Shopee", href: "https://www.shopee.com/" },
-      { label: "Instagram", href: "https://www.instagram.com/" },
-      { label: "X/Twitter", href: "https://twitter.com/" },
+      { label: "TikTok", href: "https://www.tiktok.com/@dutacctv_tangerang?_t=ZS-90ouZTrrT3H&_r=1" },
+      { label: "Instagram", href: "https://www.instagram.com/dutacctv_tangerang?igsh=MXF2eGQ3dmhteHpnZQ==" },
     ],
   },
   servicesProducts: [
@@ -92,12 +91,22 @@ const site = {
     },
   ],
   clients: [
-    { name: "Bank Nusantara", logo: "/clients/bank-nusantara.png" },
-    { name: "Mall Sentosa", logo: "/clients/mall-sentosa.png" },
-    { name: "Klinik Sehat", logo: "/clients/klinik-sehat.png" },
-    { name: "Gudang Prima", logo: "/clients/gudang-prima.png" },
-    { name: "Hotel Bahari", logo: "/clients/hotel-bahari.png" },
-    { name: "Toko Makmur", logo: "/clients/toko-makmur.png" },
+    { name: "Bank Nusantara", logo: "/clients/dbschenker.png" },
+    { name: "Mall Sentosa", logo: "/clients/superindo.png" },
+    { name: "Klinik Sehat", logo: "/clients/pokphand.png" },
+    { name: "Gudang Prima", logo: "/clients/strada.png" },
+    { name: "Hotel Bahari", logo: "/clients/vepro-nusa-persada.png" },
+    { name: "Toko Makmur", logo: "/clients/berdikari-jaya-plastik.png" },
+    { name: "Toko Makmur", logo: "/clients/cargill.png" },
+    { name: "Toko Makmur", logo: "/clients/wki.png" },
+    { name: "Toko Makmur", logo: "/clients/btcocoa.png" },
+    { name: "Toko Makmur", logo: "/clients/bppt.png" },
+    { name: "Toko Makmur", logo: "/clients/tripatra.png" },
+    { name: "Toko Makmur", logo: "/clients/cpl.png" },
+    { name: "Toko Makmur", logo: "/clients/mahameru.png" },
+    { name: "Toko Makmur", logo: "/clients/kanemory.png" },
+    { name: "Toko Makmur", logo: "/clients/adilmart.png" },
+    { name: "Toko Makmur", logo: "/clients/jict.png" },
   ],
 
   articles: [
@@ -119,10 +128,10 @@ const site = {
     },
   ],
   testimonialGallery: [
-    { src: "/testimonials/testi-01.jpg", alt: "Instalasi CCTV di ruko A" },
-    { src: "/testimonials/testi-02.jpg", alt: "Pemasangan di gudang B" },
-    { src: "/testimonials/testi-03.jpg", alt: "Monitoring room kantor C" },
-    { src: "/testimonials/testi-04.jpg", alt: "Kamera dome indoor" },
+    { src: "/testimonials/testi-01.png", alt: "Instalasi CCTV di ruko A" },
+    { src: "/testimonials/testi-02.png", alt: "Pemasangan di gudang B" },
+    { src: "/testimonials/testi-03.png", alt: "Monitoring room kantor C" },
+    { src: "/testimonials/testi-04.png", alt: "Kamera dome indoor" },
   ],
   heroInteractive: {
     video: "/hero/security-loop.mp4", // letakkan di public/hero/security-loop.mp4
@@ -180,13 +189,15 @@ const site = {
     address:
       "Grand Boulevard, Jl. Citra Raya Boulevard No.209Jl Blok V01A, Ciakar, Kec. Panongan, Kabupaten Tangerang, Banten 15710",
     whatsapp:
-      "https://wa.me/6281234567890?text=Hi%20ACME%2C%20saya%20ingin%20konsultasi",
-    mapEmbedSrc: "https://www.google.com/maps/embed?pb=<EMBED_QUERY_KAMU>",
+      "https://wa.me/6281310947486?text=Hi%2C%20saya%20ingin%20konsultasi",
+    mapEmbedSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.976701042441!2d106.5254221!3d-6.266794399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4207b98b42d833%3A0xf5ada83235550c44!2sPT.DUTA%20TEKNIK%20SOLUSINDO!5e0!3m2!1sen!2sid!4v1761309577950!5m2!1sen!2sid",
+
     formAction: "https://formspree.io/f/meorwlqb",
   },
   support: {
-    email: "support@dutacctv.id",
-    whatsapp: "62812xxxxxxx",
+    email: "hugoamerta@dtsonline.co.id",
+    whatsapp: "6281310947486",
     hours: "Senin–Sabtu, 09.00–18.00",
     sla: "Respon awal ≤ 1 jam kerja • Kunjungan ≤ 1–2 hari",
     topics: [
@@ -238,7 +249,7 @@ site.about = {
   cta: {
     title: "Siap tingkatkan keamanan bisnis Anda?",
     desc: "Jadwalkan survei lokasi gratis dan dapatkan rekomendasi paket terbaik.",
-    href: "#contact",
+    href: "https://wa.me/6281310947486?text=Hi%2C%20saya%20ingin%20menjadwalkan%20survei%20lokasi",
     label: "Jadwalkan Survei",
   },
 };

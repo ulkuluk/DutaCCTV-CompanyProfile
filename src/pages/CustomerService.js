@@ -68,8 +68,8 @@ export default function CustomerService() {
 
   const waLink = useMemo(() => {
     const text =
-      "Halo%20BOSS%20CCTV%2C%20saya%20ingin%20mengajukan%20keluhan%2Fpermintaan%20bantuan.";
-    return `https://wa.me/${s.whatsapp || "62812xxxxxxx"}?text=${text}`;
+      "Halo%2C%20saya%20ingin%20mengajukan%20keluhan%2Fpermintaan%20bantuan.";
+    return `https://wa.me/${s.whatsapp || "6281310947486"}?text=${text}`;
   }, [s.whatsapp]);
 
   return (
@@ -225,20 +225,7 @@ export default function CustomerService() {
                     />
                   </Field>
                 </div>
-                <label className="inline-flex items-center gap-2">
-                  <input
-                    type="checkbox"
-                    required
-                    className="h-4 w-4 border-slate-300 text-blue-600 focus:ring-blue-600"
-                  />
-                  <span className="text-sm text-slate-700">
-                    Saya menyetujui pemrosesan data sesuai{" "}
-                    <a href="/privacy" className="text-blue-700 underline">
-                      Kebijakan Privasi
-                    </a>
-                    .
-                  </span>
-                </label>
+                
 
                 <div className="flex items-center gap-3 pt-2">
                   <Button type="submit">Kirim Keluhan</Button>

@@ -35,7 +35,7 @@ export default function OurClientsSection() {
       <div className="grid gap-8 md:grid-cols-5">
         {/* Logo klien (3 kolom pada md+) */}
         <div className="md:col-span-3">
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
             {site.clients.map((c) => (
               <div
                 key={c.name}
@@ -45,7 +45,7 @@ export default function OurClientsSection() {
                 <img
                   src={c.logo}
                   alt={c.name}
-                  className="h-10 w-auto object-contain grayscale hover:grayscale-0 transition"
+                  className="h-10 w-auto object-contain transition"
                   loading="lazy"
                   decoding="async"
                 />
