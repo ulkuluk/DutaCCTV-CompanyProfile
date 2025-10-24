@@ -15,7 +15,7 @@ function StatItem({ label, value, delay = 0 }) {
       transition={{ duration: 0.45, delay }}
       className="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm"
     >
-      <div className="text-3xl font-semibold text-blue-700">
+      <div className="text-3xl font-semibold " style={{ color: "#C7000D" }}>
         {v.toLocaleString()}+
       </div>
       <div className="mt-1 text-sm text-slate-600">{label}</div>
@@ -24,9 +24,13 @@ function StatItem({ label, value, delay = 0 }) {
 }
 
 export default function OurClientsSection() {
-    const stats = site.stats || [];
+  const stats = site.stats || [];
   return (
-    <Section id="clients" kicker="Our Clients" title="Dipercaya berbagai bisnis">
+    <Section
+      id="clients"
+      kicker="Our Clients"
+      title="Dipercaya berbagai bisnis"
+    >
       {/* Grid klien + carousel */}
       <div className="grid gap-8 md:grid-cols-5">
         {/* Logo klien (3 kolom pada md+) */}
@@ -57,7 +61,12 @@ export default function OurClientsSection() {
       </div>
       <div className="mt-7 grid gap-6 md:grid-cols-4">
         {stats.map((s, i) => (
-          <StatItem key={s.label} label={s.label} value={s.value} delay={i * 0.05} />
+          <StatItem
+            key={s.label}
+            label={s.label}
+            value={s.value}
+            delay={i * 0.05}
+          />
         ))}
       </div>
     </Section>

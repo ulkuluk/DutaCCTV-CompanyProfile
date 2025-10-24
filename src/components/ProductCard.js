@@ -2,7 +2,12 @@
 export default function ProductCard({ title, img, desc }) {
   return (
     <article className="rounded-[24px] border border-slate-200 bg-white p-6 shadow-md transition hover:shadow-lg">
-      <h3 className="text-xl font-bold text-blue-600 text-center">{title}</h3>
+      <h3
+        className="text-xl font-bold text-center"
+        style={{ color: "#C7000D" }}
+      >
+        {title}
+      </h3>
 
       <div className="mt-4 flex items-center justify-center">
         <img
@@ -14,9 +19,7 @@ export default function ProductCard({ title, img, desc }) {
         />
       </div>
 
-      <p className="mt-6 text-sm leading-6 text-slate-700">
-        {desc}
-      </p>
+      <p className="mt-6 text-sm leading-6 text-slate-700">{desc}</p>
     </article>
   );
 }

@@ -3,7 +3,7 @@ const site = {
   brand: {
     name: "We Make Your Life Secure",
     tagline: "Driving growth with clarity and execution.",
-    logoText: "DC",
+    logo: "/logo/logo.jpeg",
   },
   nav: [
     { label: "Home", href: "/home" },
@@ -175,17 +175,18 @@ const site = {
 
   contact: {
     headline: "Let’s talk about your goals",
-    email: "hello@acme.co",
-    phone: "+62 812-3456-7890",
-    address: "Jl. Mawar No. 10, Jakarta, Indonesia",
+    email: "hugoamerta@dtsonline.co.id",
+    phone: "+62 813-1094-7486",
+    address:
+      "Grand Boulevard, Jl. Citra Raya Boulevard No.209Jl Blok V01A, Ciakar, Kec. Panongan, Kabupaten Tangerang, Banten 15710",
     whatsapp:
       "https://wa.me/6281234567890?text=Hi%20ACME%2C%20saya%20ingin%20konsultasi",
     mapEmbedSrc: "https://www.google.com/maps/embed?pb=<EMBED_QUERY_KAMU>",
-    formAction: "https://formspree.io/f/meorwlqb", 
+    formAction: "https://formspree.io/f/meorwlqb",
   },
   support: {
     email: "support@dutacctv.id",
-    whatsapp: "62812xxxxxxx", 
+    whatsapp: "62812xxxxxxx",
     hours: "Senin–Sabtu, 09.00–18.00",
     sla: "Respon awal ≤ 1 jam kerja • Kunjungan ≤ 1–2 hari",
     topics: [
@@ -230,9 +231,9 @@ site.about = {
     { name: "Budi Santoso", role: "Lead Technician", photo: "/team/budi.jpg" },
   ],
   certifications: [
-    { name: "Hikvision Partner", logo: "/certs/hikvision.png" },
-    { name: "Dahua Partner", logo: "/certs/dahua.png" },
-    { name: "Ezviz", logo: "/certs/ezviz.png" },
+    { name: "Hikvision Partner", logo: "/certs/hikvision2023.png" },
+    { name: "Hikvision Partner", logo: "/certs/hikvision2024.png" },
+    { name: "Hugo Amerta", logo: "/certs/hugoamerta.png" },
   ],
   cta: {
     title: "Siap tingkatkan keamanan bisnis Anda?",

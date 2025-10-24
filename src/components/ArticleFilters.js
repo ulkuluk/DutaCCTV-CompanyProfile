@@ -19,8 +19,8 @@ export default function ArticleFilters({
             onClick={() => onChange?.(c)}
             className={`rounded-full border px-3 py-1 text-sm ${
               value === c
-                ? "border-blue-600 text-blue-700"
-                : "border-slate-200 text-slate-700 hover:bg-slate-50"
+                ? "border-red-600 text-red-700"
+                : "border-red-200 text-red-700 hover:bg-red-50"
             }`}
           >
             {c}

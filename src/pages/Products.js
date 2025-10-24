@@ -75,8 +75,8 @@ export default function Products() {
               className={`rounded-full border px-4 py-2 text-sm transition
                 ${
                   active === t.slug
-                    ? "border-blue-600 text-blue-700 bg-blue-50"
-                    : "border-slate-200 hover:bg-slate-50"
+                    ? "border-red-600 text-red-700 bg-white"
+                    : "border-red-200 hover:bg-red-50"
                 }`}
             >
               {t.title}

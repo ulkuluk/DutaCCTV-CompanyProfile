@@ -12,7 +12,7 @@ export default function ContactSection() {
             Kontak & Alamat
           </h2>
 
-          <div className="mt-4 rounded-2xl bg-[#0E4A7E] text-white p-6 md:p-8 shadow-xl ring-1 ring-black/10">
+          <div className="mt-4 rounded-2xl bg-[#C7000D] text-white p-6 md:p-8 shadow-xl ring-1 ring-black/10">
             <div className="space-y-6 text-[15px] leading-7">
               <div>
                 <p className="font-semibold italic opacity-90">

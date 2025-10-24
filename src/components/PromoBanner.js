@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import site from "../content/site";
 
 export default function PromoBanner() {
+  const PRIMARY = "#ff5151ff"; // merah lebih muda dari navbar
+  const PRIMARY_DARK = "#c7000dff";
   const p = site.promo;
   if (!p) return null;
   return (
@@ -14,7 +16,10 @@ export default function PromoBanner() {
     >
       <a
         href={p.href || "#"}
-        className="block rounded-2xl bg-gradient-to-r from-blue-600 to-sky-500 p-6 text-white shadow hover:shadow-md transition"
+        className="block rounded-2xl p-6 text-white shadow hover:shadow-md transition"
+        style={{
+          background: `linear-gradient(to right, ${PRIMARY_DARK}, ${PRIMARY})`,
+        }}
       >
         <div className="flex flex-col items-start gap-2 md:flex-row md:items-center md:justify-between">
           <div>
@@ -22,7 +27,7 @@ export default function PromoBanner() {
               {p.badge}
             </span>
             <span className="text-xl font-semibold">{p.title}</span>
-            <span className="block text-blue-100">{p.desc}</span>
+            <span className="block text-white">{p.desc}</span>
           </div>
           <span className="mt-3 rounded-lg bg-white/15 px-4 py-2 text-sm md:mt-0">
             Lihat detail →

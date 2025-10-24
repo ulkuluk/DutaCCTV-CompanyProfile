@@ -15,7 +15,10 @@ export default function Section({
         {(kicker || title || subtitle) && (
           <header className="mb-10">
             {kicker && (
-              <p className="text-sm font-semibold uppercase tracking-wider text-blue-700">
+              <p
+                className="text-sm font-semibold uppercase tracking-wider"
+                style={{ color: "#C7000D" }} // warna kicker disesuaikan
+              >
                 {kicker}
               </p>
             )}

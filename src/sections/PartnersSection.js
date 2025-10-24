@@ -5,7 +5,7 @@ export default function PartnersSection() {
   const a = site.about;
   return (
     <Section kicker="Partners & Certifications" title="Mitra & sertifikasi">
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-6">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3">
         {(a.certifications || []).map((c) => (
           <div
             key={c.name}
@@ -15,7 +15,7 @@ export default function PartnersSection() {
             <img
               src={c.logo}
               alt={c.name}
-              className="h-10 w-auto object-contain grayscale hover:grayscale-0 transition"
+              className="max-h-96 w-auto object-contain hover:grayscale-0 transition"
             />
           </div>
         ))}

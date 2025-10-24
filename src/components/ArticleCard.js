@@ -11,12 +11,17 @@ export default function ArticleCard({ title, excerpt, href, cover, date }) {
         />
       )}
       <div className="p-6">
-        {date && <div className="text-xs text-slate-500">{new Date(date).toLocaleDateString()}</div>}
+        {date && (
+          <div className="text-xs text-slate-500">
+            {new Date(date).toLocaleDateString()}
+          </div>
+        )}
         <h3 className="mt-1 text-lg font-semibold text-slate-900">{title}</h3>
         <p className="mt-2 text-sm text-slate-600">{excerpt}</p>
         <a
           href={href}
-          className="mt-4 inline-block text-sm font-medium text-blue-700 hover:underline"
+          className="mt-4 inline-block text-sm font-medium hover:underline"
+          style={{ color: "#C7000D" }}
         >
           Baca selengkapnya →
         </a>

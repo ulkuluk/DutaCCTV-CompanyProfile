@@ -11,7 +11,7 @@ export default function ProjectSection() {
             key={x.title}
             className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
           >
-            <div className="text-blue-600 text-sm font-semibold">{x.title}</div>
+            <div className="text-sm font-semibold" style={{ color: "#C7000D" }}>{x.title}</div>
             <p className="mt-2 text-sm text-slate-600">{x.desc}</p>
           </div>
         ))}

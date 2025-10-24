@@ -12,8 +12,11 @@ export default function Button({
   const base =
     "inline-flex items-center justify-center rounded-xl px-5 py-2.5 text-sm font-medium transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2";
   const variants = {
-    primary:
-      "bg-blue-600 text-white hover:bg-blue-700 focus-visible:ring-blue-600",
+    primary: `
+      bg-[#C7000D] text-white 
+      hover:bg-[#A8000B] 
+      focus-visible:ring-[#C7000D]
+    `,
     secondary:
       "bg-white text-slate-900 ring-1 ring-slate-200 hover:bg-slate-50 focus-visible:ring-slate-400",
     ghost:

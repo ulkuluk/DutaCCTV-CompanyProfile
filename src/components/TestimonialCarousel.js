@@ -7,7 +7,9 @@ export default function TestimonialCarousel({ images = [], interval = 4000 }) {
 
   const go = (dir) => {
     setIndex((i) =>
-      dir === "next" ? (i + 1) % safeImages.length : (i - 1 + safeImages.length) % safeImages.length
+      dir === "next"
+        ? (i + 1) % safeImages.length
+        : (i - 1 + safeImages.length) % safeImages.length
     );
   };
 
@@ -69,7 +71,9 @@ export default function TestimonialCarousel({ images = [], interval = 4000 }) {
             <button
               key={i}
               onClick={() => setIndex(i)}
-              className={`h-2.5 w-2.5 rounded-full ${i === index ? "bg-blue-600" : "bg-slate-300"} focus:outline-none focus:ring`}
+              className={`h-2.5 w-2.5 rounded-full ${
+                i === index ? "bg-[#C7000D]" : "bg-slate-300"
+              } focus:outline-none focus:ring-2 focus:ring-[#C7000D]`}
               aria-label={`Slide ${i + 1}`}
             />
           ))}

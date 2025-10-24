@@ -26,7 +26,7 @@ export default function About() {
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-white">
             {a.hero.title}
           </h1>
-          <p className="mt-4 max-w-3xl text-blue-100">{a.hero.subtitle}</p>
+          <p className="mt-4 max-w-3xl text-blue-100" >{a.hero.subtitle}</p>
 
           <div className="mt-6 flex flex-wrap gap-2">
             {(a.badges || []).map((b) => (
@@ -49,7 +49,6 @@ export default function About() {
 
       <ProjectSection />
 
-      {/* PROJECT SHOWCASE (inspirasi bosscctv “our project”) */}
       <Section kicker="Projects" title="Beberapa proyek terbaru">
         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {(a.projects || []).map((p) => (
@@ -68,27 +67,7 @@ export default function About() {
             </figure>
           ))}
         </div>
-      </Section>
-
-      {/* TEAM */}
-      <Section kicker="Our Team" title="Tim inti kami">
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-          {(a.team || []).map((m) => (
-            <div
-              key={m.name}
-              className="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm"
-            >
-              <img
-                src={m.photo}
-                alt={m.name}
-                className="mx-auto h-28 w-28 rounded-full object-cover"
-              />
-              <div className="mt-3 text-base font-semibold">{m.name}</div>
-              <div className="text-sm text-slate-600">{m.role}</div>
-            </div>
-          ))}
-        </div>
-      </Section>
+      </Section>  
 
       <PartnersSection />
       <AppointmentBannerSection />

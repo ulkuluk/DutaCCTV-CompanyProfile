@@ -25,8 +25,10 @@ export default function WhyChooseUsSection() {
               transition={{ duration: 0.4, delay: i * 0.05 }}
               className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md"
             >
-              <Icon className="h-8 w-8 text-blue-600" />
-              <h3 className="mt-4 text-base font-semibold text-slate-900">{x.title}</h3>
+              <Icon className="h-8 w-8" style={{ color: "#C7000D" }} />
+              <h3 className="mt-4 text-base font-semibold text-slate-900">
+                {x.title}
+              </h3>
               <p className="mt-2 text-sm text-slate-600">{x.desc}</p>
             </motion.div>
           );

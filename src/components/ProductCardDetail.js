@@ -31,7 +31,8 @@ export default function ProductCardDetail({ name, img, bullets = [] }) {
               <li key={i} className="flex items-start gap-2">
                 <Check
                   aria-hidden
-                  className="mt-0.5 h-4 w-4 shrink-0 text-blue-600"
+                  className="mt-0.5 h-4 w-4 shrink-0"
+                  style={{ color: "#C7000D" }}
                 />
                 <span>{b}</span>
               </li>

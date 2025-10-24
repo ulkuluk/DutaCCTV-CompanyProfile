@@ -44,8 +44,8 @@ export default function HeroInteractive() {
       >
         <defs>
           <linearGradient id="waveGradient" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#2563EB" /> {/* blue-600 */}
-            <stop offset="100%" stopColor="#0EA5E9" /> {/* sky-500 */}
+            <stop offset="0%" stopColor="#ff5151ff" /> {/* blue-600 */}
+            <stop offset="100%" stopColor="#c7000dff" /> {/* sky-500 */}
           </linearGradient>
         </defs>
         <path

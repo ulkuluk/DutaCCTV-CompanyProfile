@@ -30,7 +30,7 @@ export default function ArticleSidebar({ posts = [], q, setQ, limit = 10 }) {
             placeholder="Cari artikel…"
             className="flex-1 px-3 py-2 text-slate-700 outline-none"
           />
-          <button className="px-3 py-2 text-sm font-medium bg-blue-600 text-white hover:bg-blue-700">
+          <button className="px-3 py-2 text-sm font-medium bg-[#C7000D] text-white hover:bg-blue-700">
             Cari
           </button>
         </div>
@@ -44,7 +44,8 @@ export default function ArticleSidebar({ posts = [], q, setQ, limit = 10 }) {
             <li key={p.slug} className="leading-snug">
               <Link
                 to={`/articles/${p.slug}`}
-                className="text-blue-700 hover:underline"
+                className=" hover:underline "
+                style={{ color: "#C7000D" }}
               >
                 {p.title}
               </Link>
