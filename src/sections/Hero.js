@@ -9,7 +9,7 @@ export default function HeroInteractive() {
   return (
     <section id="home" className="relative z-0 overflow-hidden">
       <div className="absolute inset-0 -z-10">
-        <img src={h.image} alt="" className="h-full w-full object-cover" />
+        <img src={h.image} alt="" className="h-full w-full" />
         <div className="absolute inset-0 bg-slate-900/50" />
       </div>
 

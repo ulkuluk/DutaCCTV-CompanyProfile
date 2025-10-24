@@ -10,6 +10,7 @@ import AppointmentBannerSection from "../sections/AppointmentBannerSection";
 
 export default function About() {
   const a = site.about;
+  const i = site.heroInteractive
 
   return (
     <div className="bg-white text-slate-900">
@@ -17,7 +18,7 @@ export default function About() {
 
       <section className="relative z-0 overflow-hidden">
         <img
-          src={a.hero.image}
+          src={i.image}
           alt=""
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />

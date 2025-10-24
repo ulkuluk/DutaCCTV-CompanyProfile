@@ -87,7 +87,7 @@ export default function Articles() {
                   title={a.title}
                   excerpt={a.excerpt}
                   href={`/articles/${a.slug}`}
-                  cover={a.cover}
+                  cover={`/articles/${a.slug}/${a.cover}`}
                   date={a.date}
                 />
               ))}

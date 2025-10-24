@@ -31,14 +31,14 @@ export default function ArticlesSection() {
         <div className="mt-10 text-center text-slate-600">Memuat artikel…</div>
       ) : (
         <>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-2">
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
             {items.slice(0, 2).map((a) => (
               <ArticleCard
                 key={a.slug}
                 title={a.title}
                 excerpt={a.excerpt}
                 href={`/articles/${a.slug}`}
-                cover={a.cover}
+                cover={`/articles/${a.slug}/${a.cover}`}
                 date={a.date}
               />
             ))}

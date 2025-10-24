@@ -62,32 +62,32 @@ const site = {
   servicesProducts: [
     {
       title: "CCTV",
-      img: "/products/cctv.jpg",
+      img: "/products/cctv.png",
       desc: "Meningkatkan keamanan dengan perekaman video real-time. Cocok untuk rumah, toko, gudang, dan kantor.",
     },
     {
       title: "PABX Telepon",
-      img: "/products/pabx.jpg",
+      img: "/products/pabx.png",
       desc: "Sistem telekomunikasi internal untuk mengatur panggilan masuk/keluar tanpa operator, efisien untuk bisnis.",
     },
     {
       title: "Fingerprint",
-      img: "/products/fingerprint.jpg",
+      img: "/products/fingerprint.png",
       desc: "Verifikasi identitas berbasis sidik jari untuk absensi/akses, cepat dan akurat.",
     },
     {
       title: "Smarthome",
-      img: "/products/fingerprint.jpg",
+      img: "/products/smarthome.png",
       desc: "Maksimalkan kenyamanan dan efisiensi rumah Anda dengan fungsi smarthome. Kontrol pintu, lampu, dan suhu ruangan dengan mudah untuk menciptakan kehidupan yang lebih modern dan cerdas.",
     },
     {
       title: "Fire Alarm",
-      img: "/products/fingerprint.jpg",
+      img: "/products/firealarm.png",
       desc: "Sebuah sistem penanda bahaya terhadap kebakaran yang bekerja untuk mendeteksi keberadaan api dan asap yang tidak diinginkan dengan memonitor perubahan lingkungan yang terkait dengan pembakaran.",
     },
     {
       title: "Alarm System",
-      img: "/products/fingerprint.jpg",
+      img: "/products/alarmsystem.png",
       desc: "Sistem alarm rumah dapat memonitor keamanan rumah dan memberikan laporan kepada pemilik jika terjadi tindakan yang mengancam keamanan rumah sehingga hal-hal yang tidak diinginkan dapat diminimalisir.",
     },
   ],
@@ -126,7 +126,7 @@ const site = {
   ],
   heroInteractive: {
     video: "/hero/security-loop.mp4", // letakkan di public/hero/security-loop.mp4
-    image: "/hero/hero-fallback.jpg", // fallback kalau tidak pakai video
+    image: "/hero/hero-fallback.png", // fallback kalau tidak pakai video
     heading: "Solusi Keamanan Terintegrasi untuk Bisnis Anda",
     subheading:
       "Instalasi, perawatan, dan monitoring CCTV profesional — cepat, rapi, bergaransi.",

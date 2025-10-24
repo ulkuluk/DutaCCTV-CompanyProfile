@@ -1,25 +1,27 @@
 // src/components/ProductCard.jsx
 export default function ProductCard({ title, img, desc }) {
   return (
-    <article className="rounded-[24px] border border-slate-200 bg-white p-6 shadow-md transition hover:shadow-lg">
-      <h3
-        className="text-xl font-bold text-center"
-        style={{ color: "#C7000D" }}
-      >
-        {title}
-      </h3>
-
-      <div className="mt-4 flex items-center justify-center">
+    <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md hover:shadow-lg transition-all duration-300">
+      {/* Bagian gambar penuh */}
+      <div className="relative h-96 w-full">
         <img
           src={img}
           alt={title}
-          className="h-40 w-auto object-contain drop-shadow-sm"
+          className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
           loading="lazy"
           decoding="async"
         />
       </div>
 
-      <p className="mt-6 text-sm leading-6 text-slate-700">{desc}</p>
+      {/* Konten teks */}
+      <div className="p-6 text-center">
+        <h3 className="text-xl font-bold uppercase tracking-wide" style={{ color: "#C7000D" }}>
+          {title}
+        </h3>
+        <p className="mt-3 text-sm leading-relaxed text-slate-700">
+          {desc}
+        </p>
+      </div>
     </article>
   );
 }
