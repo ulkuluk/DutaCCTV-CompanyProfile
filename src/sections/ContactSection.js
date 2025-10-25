@@ -16,7 +16,7 @@ export default function ContactSection() {
             <div className="space-y-6 text-[15px] leading-7">
               <div>
                 <p className="font-semibold italic opacity-90">
-                  Head Office &amp; Workshop :
+                  Head Office :
                 </p>
                 <p className="mt-2 whitespace-pre-line">
                   {site.contact.address}

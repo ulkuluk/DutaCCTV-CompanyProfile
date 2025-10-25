@@ -45,7 +45,7 @@ export default function OurClientsSection() {
                 <img
                   src={c.logo}
                   alt={c.name}
-                  className="h-10 w-auto object-contain transition"
+                  className="h-12 w-auto object-contain transition"
                   loading="lazy"
                   decoding="async"
                 />

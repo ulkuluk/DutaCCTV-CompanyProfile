@@ -7,10 +7,11 @@ import Badge from "../components/Badge"; // hapus import ini jika tak pakai Badg
 import ProjectSection from "../sections/ProjectsSection";
 import PartnersSection from "../sections/PartnersSection";
 import AppointmentBannerSection from "../sections/AppointmentBannerSection";
+import gallery from "../content/gallery";
 
 export default function About() {
   const a = site.about;
-  const i = site.heroInteractive
+  const i = site.heroInteractive;
 
   return (
     <div className="bg-white text-slate-900">
@@ -18,7 +19,7 @@ export default function About() {
 
       <section className="relative z-0 overflow-hidden">
         <img
-          src={i.image}
+          src={"/hero/hero-about.png"}
           alt=""
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
@@ -27,7 +28,7 @@ export default function About() {
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-white">
             {a.hero.title}
           </h1>
-          <p className="mt-4 max-w-3xl text-blue-100" >{a.hero.subtitle}</p>
+          <p className="mt-4 max-w-3xl text-blue-100">{a.hero.subtitle}</p>
 
           <div className="mt-6 flex flex-wrap gap-2">
             {(a.badges || []).map((b) => (
@@ -50,25 +51,32 @@ export default function About() {
 
       <ProjectSection />
 
-      <Section kicker="Projects" title="Beberapa proyek terbaru">
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-          {(a.projects || []).map((p) => (
-            <figure
-              key={p.title}
-              className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+      <Section
+        kicker="Our Gallery"
+        id="gallery"
+        title="Galeri Kegiatan"
+        subtitle="Dokumentasi berbagai kegiatan dan proyek instalasi yang telah kami kerjakan."
+      >
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {gallery.map((item, idx) => (
+            <div
+              key={idx}
+              className="group relative overflow-hidden rounded-2xl shadow-sm border border-slate-200"
             >
               <img
-                src={p.image}
-                alt={p.title}
-                className="h-48 w-full object-cover hover:scale-[1.02] transition"
+                src={item.src}
+                alt={item.caption || `Kegiatan ${idx + 1}`}
+                className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <figcaption className="p-4 text-sm font-medium text-slate-800">
-                {p.title}
-              </figcaption>
-            </figure>
+              {item.caption && (
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent px-3 py-2 text-sm text-white">
+                  {item.caption}
+                </div>
+              )}
+            </div>
           ))}
         </div>
-      </Section>  
+      </Section>
 
       <PartnersSection />
       <AppointmentBannerSection />

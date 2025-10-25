@@ -47,7 +47,7 @@ export default function Packages() {
         subtitle={
           isBrandPage
             ? `${brand.brand} — semua paket & kategori`
-            : "Paket Full HD dari Hikvision, HiLook, dan EZVIZ. Instalasi rapi, garansi resmi."
+            : "Paket CCTV dari Hikvision, HiLook, dan EZVIZ. Instalasi rapi, garansi resmi."
         }
         image={h.image}
         overlay="bg-slate-900/50"

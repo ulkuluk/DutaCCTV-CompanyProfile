@@ -8,10 +8,26 @@ export default function HeroInteractive() {
 
   return (
     <section id="home" className="relative z-0 overflow-hidden">
+      {/* BACKGROUND */}
       <div className="absolute inset-0 -z-10">
-        <img src={h.image} alt="" className="h-full w-full" />
-        <div className="absolute inset-0 bg-slate-900/50" />
+        <img
+          src={h.image}
+          alt=""
+          className="h-full w-full object-cover object-center brightness-90 md:brightness-100"
+        />
+        {/* scrim global vertikal */}
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/40 to-slate-900/20 md:from-slate-900/60 md:via-slate-900/30 md:to-transparent" />
       </div>
+
+      {/* ✅ local scrim dipindah ke level SECTION, full-bleed */}
+      <div
+        aria-hidden
+        className="
+          pointer-events-none absolute inset-y-0 left-0 -z-0
+          w-[85%] max-w-[980px]
+          bg-gradient-to-r from-slate-900/70 via-slate-900/35 to-transparent
+        "
+      />
 
       <Container className="min-h-[72vh] py-20 grid items-center relative">
         <motion.div
@@ -19,12 +35,14 @@ export default function HeroInteractive() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl"
+          className="relative max-w-3xl"
         >
-          <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-white">
+          <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
             {h.heading}
           </h1>
-          <p className="mt-4 text-lg text-blue-100">{h.subheading}</p>
+          <p className="mt-4 text-lg text-blue-100 drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)]">
+            {h.subheading}
+          </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             {h.ctas.map((c) => (
@@ -36,16 +54,17 @@ export default function HeroInteractive() {
         </motion.div>
       </Container>
 
+      {/* wave footer */}
       <svg
         aria-hidden
-        className="pointer-events-none block h-8 w-full"
+        className="relative z-20 block h-8 w-full"
         viewBox="0 0 1440 40"
         preserveAspectRatio="none"
       >
         <defs>
           <linearGradient id="waveGradient" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#ff5151ff" /> {/* blue-600 */}
-            <stop offset="100%" stopColor="#c7000dff" /> {/* sky-500 */}
+            <stop offset="0%" stopColor="#ff5151ff" />
+            <stop offset="100%" stopColor="#c7000dff" />
           </linearGradient>
         </defs>
         <path
